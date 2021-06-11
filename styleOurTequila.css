@@ -189,11 +189,13 @@ h2 {
 .processTitle {
     text-align: center;
     padding-top: 128px;
+    padding-bottom: 128px;
     background-color: #f0e7d1;
-    font-size: 48px;
-    font-family: "Khand", sans-serif;
+    font-size: 32px;
+    font-family: "Seymour One", sans-serif;
     height: auto;
 }
+
 .processDescription {
     padding-right: 20%;
     padding-left: 20%;
@@ -204,10 +206,161 @@ h2 {
     font-size: 18px;
     font-weight: bold;
     line-height: 40px;
-    padding-bottom: 128px;
 }
 
 .processPart {
+    margin-top: 64px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.columnTextLeft {
+    padding-top: 128px;
+    margin-bottom: 60px;
+    float: left;
+    width: 40%;
+    line-height: 45px;
+    height: auto;
+    padding-right: 64px;
+    padding-left: 128px;
+    text-align: left;
+}
+
+.columnTextRight {
+    padding-top: 128px;
+    float: left;
+    width: 40%;
+    height: auto;
+    line-height: 45px;
+    padding-right: 128px;
+    text-align: left;
+}
+
+.columnImgLeft {
+    padding-top: 128px;
+    float: left;
+    width: 60%;
+    height: auto;
+    image-rendering: auto;
+    padding-left: 128px;
+    text-align: left;
+}
+
+.columnImgRight {
+    padding-top: 128px;
+    float: left;
+    width: 60%;
+    height: auto;
+    padding-right: 128px;
+    padding-left: 64px;
+    text-align: left;
+}
+
+.numbering {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    margin-bottom: 24px;
+    background-color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutTequila {
+    padding-top: 40px;
+    font-family: "Libre Caslon Text", serif;
+    font-size: 15px;
+    text-align: left;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.ourSustainabilityButton {
+    background-color: #edf2f7;
+    font-family: "Kanit", sans-serif;
+    border-radius: 3px;
+    border: none;
+    padding-top: 64px;
+    width: auto;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 64px;
+}
+
+.ourSustainabilityButton:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+.loginform {
+    width: 100%;
+    height: 100%;
+    background-color: #405a46;
+}
+.login {
+    box-sizing: border-box;
+    padding: 120px 20px;
+    display: flex;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2;
+}
+.dogtxt {
+    color: #f0e7d1;
+    font-family: "Seymour One", sans-serif;
+}
+.signuptxt {
+    color: #f0e7d1;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 420px;
+    margin-top: 10px;
+}
+.inputlog {
+    height: 42px;
+    border-radius: 4px;
+    border: none;
+    background-color: #edf2f7;
+}
+.inputlog:hover {
+    border: none;
+}
+.signupbtn {
+    width: 100%;
+    height: 42px;
+    border-radius: 4px;
+    max-width: 420px;
+    margin-top: 10px;
+    background-color: #28372c;
+    border: none;
+    color: #809084;
+}
+
+.signupbtn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.comeAgainSoonBackground {
+    background-image: url(imgs/rock.jpg);
+    background-size: cover;
+    height: 950px;
+    text-align: center;
+}
+
+.comeAgainSoon {
+    padding-top: 20%;
 }
