@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+li {
+    margin-top: 24px;
+    float: left;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.findUs {
+    background-color: #edf2f7;
+    border-radius: 8px;
+    color: black;
+}
+
+.findUs:hover {
+    border: 1px solid black;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 8px;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    font-family: "Kanit", sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Khand:wght@700&display=swap");
+
+li a:hover {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    position: sticky;
+}
+
+.centered {
+    color: #f0e7d1;
+    font-size: 144px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Khand", sans-serif;
+}
+
+.menuBar {
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("imgs/ourTequilaBackground.jpg");
+}
+
+.checkDrink {
+    height: 750px;
+    width: 50%;
+    background-color: #405a46;
+    float: right;
+}
+#blancoDiv {
+    color: #f3f0e9;
+    background-color: #294630;
+}
+.blanco {
+    float: left;
+    height: 750px;
+    width: 50%;
+    background-color: #e0e6b6;
+    background-image: url(imgs/blanco.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.reposado {
+    float: left;
+    height: 750px;
+    width: 50%;
+    background-color: #e0e6b6;
+    background-image: url(imgs/reposado.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.anejo {
+    float: left;
+    height: 750px;
+    width: 50%;
+    background-color: #e0e6b6;
+    background-image: url(imgs/anejo.png);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.checkDrinkButtons {
+    transition: 0.2s;
+    padding: 8px;
+    bottom: 0px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: #e0e6b6;
+    background-color: #405a46;
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: "Kanit", sans-serif;
+}
+
+.description {
+    display: flex;
+    color: #f3f0e9;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "Khand", sans-serif;
+    font-weight: 500;
+    padding: 4px;
+}
+
+.descriptionTitle {
+    display: block;
+    margin: 0px;
+    padding-top: 5%;
+    text-align: center;
+    justify-content: center;
+    color: #e0e6af;
+    font-family: "Roboto", sans-serif;
+    font-size: 11px;
+}
+
+.aboutDrink {
+    padding-top: 10px;
+    display: block;
+    margin: 0 0;
+    color: #f0e7d1;
+    text-align: center;
+    font-family: "Libre Caslon Text", serif;
+    font-size: 18px;
+}
+
+#checkDrinkDiv {
+    flex-grow: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#blancoDescription {
+    margin-top: 0px;
+    padding-top: 0px;
+    display: block;
+}
+#reposadoDescription {
+    display: none;
+}
+#anejoDescription {
+    display: none;
+}
+h2 {
+    text-align: center;
+    margin: 0;
+    margin-top: 24px;
+}
+
+.processTitle {
+    text-align: center;
+    padding-top: 128px;
+    background-color: #f0e7d1;
+    font-size: 48px;
+    font-family: "Khand", sans-serif;
+    height: auto;
+}
+.processDescription {
+    padding-right: 20%;
+    padding-left: 20%;
+    text-align: center;
+    font-family: "Libre Caslon Text", serif;
+    background-color: #f0e7d1;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    padding-bottom: 128px;
+}
+
+.processPart {
+    display: flex;
+    justify-content: space-around;
+}
