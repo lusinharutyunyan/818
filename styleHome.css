@@ -298,20 +298,38 @@ li a:hover {
   /* background-size: cover;
   background-image: url(https://drink818.com/static/16a8ed4f863f757d99b5a3f83339894e/22524/insta-9.jpg); */
 }
-footer{
+footer {
   width: 100%;
   height: 350px;
   background-color: #b39d87;
   padding: 48px 80px;
 }
-.copyright{
+.copyright {
   margin-top: 220px;
   color: white;
 }
-.footer2{
-  width: 50%;
+.footer1 {
+  width: 33.3%;
 }
-.footer3{
-  width: 50%;
-
+.footer2 {
+  width: 33.3%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: -287px;
+  margin-left: 185px;
+  line-height: 2.1;
+}
+.footer3 {
+  width: 33.3%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: -231px;
+  margin-left: 373px;
+  line-height: 2.1;
+}
+.footermenu {
+  text-decoration: none;
+  color: white;
 }
