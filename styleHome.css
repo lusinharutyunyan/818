@@ -360,12 +360,14 @@ footer {
 .flwus {
   display: flex;
   justify-content: flex-end;
-  margin-top: -290px;
+  margin-top: -270px;
   color: white;
 }
 .logos {
   display: flex;
   margin-left: 15px;
+  margin-top: 6px;
+ 
 }
 
 .logos > a {
