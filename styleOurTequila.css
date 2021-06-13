@@ -399,7 +399,7 @@ h2 {
 
 @media screen and (max-width: 600px) {
     .processTitle {
-        width: min-content;
+        width: 100%;
         text-align: center;
         padding-top: 128px;
         padding-bottom: 128px;
@@ -453,7 +453,7 @@ h2 {
     .columnImgLeft {
         padding-top: 128px;
         float: none;
-        width: auto;
+        width: 100%;
         height: auto;
         image-rendering: auto;
         padding-left: 0;
@@ -463,7 +463,7 @@ h2 {
     .columnImgRight {
         padding-top: 128px;
         float: none;
-        width: auto;
+        width: 100%;
         height: auto;
         padding-right: 0;
         padding-left: 0;
