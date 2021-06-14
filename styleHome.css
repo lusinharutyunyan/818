@@ -1,11 +1,12 @@
+
+* {
+    box-sizing: border-box;
+} 
 body {
     margin: 0;
     padding: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 .menuBar {
     display: flex;
@@ -19,16 +20,11 @@ body {
     justify-content: space-around;
     float: left;
     display: block;
-    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.menuBar a:hover {
-    background-color: #ddd;
-    color: black;
-}
 
 .background {
     height: 800px;
@@ -66,25 +62,23 @@ li a:hover {
 .findUs {
     display: block;
     justify-content: center;
-    color: rgb(255, 255, 255);
     text-align: center;
     padding: 8px;
     text-decoration: none;
     border: 1px solid rgba(0, 0, 0, 0);
     transition: 0.3s;
     font-family: "Kanit", sans-serif;
-    height: 70%;
     background-color: #edf2f7;
     border-radius: 8px;
-    color: rgb(0, 0, 0);
+    color:black;
 }
 
 .findUs:hover {
     cursor: pointer;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0);;
     border-radius: 8px;
-    color: rgb(255, 255, 255);
     background-color: black;
+    color: white;
 }
 
 .ourTequilaInBackGround {
