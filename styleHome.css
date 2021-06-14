@@ -230,6 +230,7 @@ li a:hover {
     background-color: black;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .blanco > * {
@@ -250,6 +251,7 @@ li a:hover {
     background-color: black;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 .anejo {
     background-color: #f0e7d1;
@@ -266,6 +268,7 @@ li a:hover {
     background-color: black;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 .last {
     height: 200px;
