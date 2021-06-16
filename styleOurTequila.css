@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 * {
@@ -30,11 +31,17 @@ body {
     color: black;
 }
 
+.icon {
+    width: auto;
+}
+
 .background {
+    width: 100%;
     height: 800px;
     background-size: cover;
     background-image: url("imgs/ourTequilaBackground.jpg");
     background-repeat: no-repeat;
+    text-align: center;
     background-position: center center;
 }
 ul {
@@ -64,17 +71,13 @@ li a:hover {
 }
 
 .findUs {
-    display: block;
-    justify-content: center;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 8px;
     text-decoration: none;
     border: 1px solid rgba(0, 0, 0, 0);
     transition: 0.3s;
     font-family: "Kanit", sans-serif;
-    height: 70%;
-    background-color: #edf2f7;
+    background-color: #ffffff;
     border-radius: 8px;
     color: rgb(0, 0, 0);
 }
@@ -87,7 +90,13 @@ li a:hover {
     background-color: black;
 }
 
+.ourTequila {
+    display: flex;
+    justify-content: center;
+}
+
 .ourTequilaInBackGround {
+    display: inline-block;
     color: #f0e7d1;
     font-size: 10vw;
     position: absolute;
@@ -97,12 +106,15 @@ li a:hover {
     font-family: "Khand", sans-serif;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     body {
-        width: min-content;
+        overflow-x: hidden;
     }
+
     .background {
+        align-items: center;
         width: 100%;
+        height: auto;
         background-color: #e0e6b6;
         background-position: center center;
         background-image: none;
@@ -234,7 +246,7 @@ li a:hover {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .checkDrink {
         height: 750px;
         width: 100%;
@@ -286,12 +298,13 @@ h2 {
 }
 
 .processTitle {
+    padding-top: 16vw;
     text-align: center;
     padding-top: 128px;
     padding-bottom: 128px;
     background-color: #f0e7d1;
     font-size: 32px;
-    font-family: "Seymour One", sans-serif;
+    font-family: "Khand", sans-serif;
     height: auto;
 }
 
@@ -304,7 +317,7 @@ h2 {
     color: black;
     font-size: 18px;
     font-weight: bold;
-    line-height: 40px;
+    line-height: 3.5vw;
 }
 
 .processPart {
@@ -314,12 +327,17 @@ h2 {
     justify-content: space-around;
 }
 
+.processPartMobile {
+    display: none;
+}
+
 .columnTextLeft {
     padding-top: 128px;
+    font-size: 3.5vw;
     margin-bottom: 60px;
     float: left;
     width: 40%;
-    line-height: 45px;
+    line-height: 3vw;
     height: auto;
     padding-right: 64px;
     padding-left: 128px;
@@ -328,11 +346,13 @@ h2 {
 
 .columnTextRight {
     padding-top: 128px;
+    font-size: 3.5vw;
     float: left;
     width: 40%;
     height: auto;
-    line-height: 45px;
-    padding-right: 128px;
+    line-height: 3vw;
+
+    padding-left: 48px;
     text-align: left;
 }
 
@@ -341,8 +361,8 @@ h2 {
     float: left;
     width: 60%;
     height: auto;
-    image-rendering: auto;
     padding-left: 128px;
+    padding-right: 64px;
     text-align: left;
 }
 
@@ -372,9 +392,9 @@ h2 {
 .aboutTequila {
     padding-top: 40px;
     font-family: "Libre Caslon Text", serif;
-    font-size: 15px;
+    font-size: 1vw;
     text-align: left;
-    line-height: 30px;
+    line-height: 2vw;
     font-weight: bold;
 }
 
@@ -385,9 +405,20 @@ h2 {
     border: none;
     padding-top: 64px;
     width: auto;
-    font-size: 18px;
+    font-size: 1.5vw;
     font-weight: bold;
     padding: 8px 64px;
+}
+
+img {
+    width: 100%;
+}
+svg {
+    width: auto;
+}
+
+div {
+    width: 100%;
 }
 
 .ourSustainabilityButton:hover {
@@ -397,15 +428,21 @@ h2 {
     transition: 0.3s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
+    .icon {
+        display: none;
+    }
+    img {
+        width: 100%;
+    }
     .processTitle {
         width: 100%;
         text-align: center;
-        padding-top: 128px;
+        padding-top: 16vw;
         padding-bottom: 128px;
         background-color: #f0e7d1;
         font-size: 28px;
-        font-family: "Seymour One", sans-serif;
+        font-family: "Khand", sans-serif;
     }
     .processDescription {
         padding-right: 20%;
@@ -418,12 +455,15 @@ h2 {
         font-weight: bold;
         line-height: 30px;
     }
-    .processPart {
-        width: min-content;
+    .processPartMobile {
+        width: 100%;
         margin-top: 64px;
         display: block;
         flex-wrap: none;
         justify-content: space-around;
+    }
+    .processPart {
+        display: none;
     }
 
     .columnTextLeft {
@@ -455,7 +495,6 @@ h2 {
         float: none;
         width: 100%;
         height: auto;
-        image-rendering: auto;
         padding-left: 0;
         text-align: center;
     }
@@ -484,7 +523,7 @@ h2 {
     }
 
     .aboutTequila {
-        padding-top: 40px;
+        padding: 40px 30px 30px 30px;
         font-family: "Libre Caslon Text", serif;
         font-size: 12px;
         text-align: left;
@@ -499,6 +538,7 @@ h2 {
     background-color: #405a46;
 }
 .login {
+    width: 100%;
     box-sizing: border-box;
     padding: 120px 20px;
     display: flex;
@@ -510,10 +550,19 @@ h2 {
 }
 .dogtxt {
     color: #f0e7d1;
-    font-family: "Seymour One", sans-serif;
+    font-family: "Khand", sans-serif;
+    font-size: 4vw;
 }
+
+.dogLogo {
+    display: flex;
+    justify-content: center;
+}
+
 .signuptxt {
     color: #f0e7d1;
+    font-size: 1.5vw;
+    line-height: 2vw;
 }
 .inputs {
     display: flex;
@@ -523,6 +572,7 @@ h2 {
     margin-top: 10px;
 }
 .inputlog {
+    width: auto;
     height: 42px;
     border-radius: 4px;
     border: none;
@@ -552,12 +602,15 @@ h2 {
 .comeAgainSoonBackground {
     background-image: url(imgs/rock.jpg);
     background-size: cover;
-    height: 950px;
+    height: auto;
     text-align: center;
+    align-items: center;
 }
 
 .comeAgainSoon {
+    align-items: center;
     padding-top: 20%;
+    padding-bottom: 20%;
 }
 footer {
     width: 100%;
@@ -571,23 +624,29 @@ footer {
     color: white;
 }
 .footer1 {
-    margin-left: 30px;
+    margin-left: 12vw;
 }
 .footer2 {
-    margin-left: 120px;
+    margin-left: 12vw;
     display: flex;
     flex-direction: column;
 }
 .footer3 {
-    margin-left: 135px;
+    margin-left: 12vw;
     display: flex;
     flex-direction: column;
 }
 
-#footer-menu {
+.flwus {
+    margin-left: 12vw;
+
+    color: white;
+}
+
+.footer-menu {
     display: flex;
-    justify-content: space-between;
-    width: 50%;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .footermenu {
@@ -598,18 +657,13 @@ footer {
 
 #last-text {
     display: flex;
+    justify-content: space-around;
 }
 
 #last-text > p {
     color: white;
     font-size: 11px;
     margin: 30px;
-}
-.flwus {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -290px;
-    color: white;
 }
 .logos {
     display: flex;
@@ -619,4 +673,33 @@ footer {
 
 .logos > a {
     margin-right: 10px;
+}
+
+.footerMobile {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .footerLogo {
+        display: flex;
+        justify-content: center;
+    }
+    .footerMobileLinks {
+        margin-top: 4vw;
+    }
+    .footerMobileLinks a {
+        text-decoration: none;
+        color: #ddd;
+        font-size: medium;
+        text-align: center;
+        display: block;
+        font-family: "Khand", sans-serif;
+    }
+    .footerWeb {
+        display: none;
+    }
+    .footerMobile {
+        display: inline-block;
+        justify-content: center;
+    }
 }
