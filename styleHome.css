@@ -7,7 +7,6 @@ body {
     padding: 0;
 }
 
-
 .menuBar {
     display: flex;
     justify-content: space-around;
@@ -24,7 +23,6 @@ body {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 
 .background {
     height: 800px;
@@ -116,6 +114,7 @@ li a:hover {
     .icon {
         display: none;
     }
+ 
 }
 
 .txtAndPic {
@@ -438,4 +437,45 @@ footer {
 
 .logos > a {
     margin-right: 10px;
+}
+@media only  screen and (max-width: 600px){
+    .txtAndPic {
+        width: 100%;
+        height: 650px;
+        display: block ;
+    
+    } 
+    .txt1 {
+        box-sizing: border-box;
+        width: 100%;
+         height: 100vh;
+        background-color: #f0e7d1;
+    }
+    .headingtxt {
+        font-size: 22px;
+        font-family: "Seymour One", sans-serif;
+    }
+    .txtAndPic2 {
+        width: 100%;
+        height: 1600px;
+        display: block;
+      
+    }
+    .txt2 {
+        width:100%;
+        height: 650px;
+        background-image: url("https://drink818.com/static/a617ad5ba4e90efc6f1b660b21922871/2f1b1/illustration-1.jpg");
+    }
+    .txt3 {
+        box-sizing: border-box;
+        padding: 180px 35px 180px 35px;
+        width: 100%;
+        height: 650px;
+        background-color: #f0e7d1;
+    }
+    .txt4 {
+        width: 100%;
+        height: 650px;
+        background-image: url("https://drink818.com/static/2d49b8e5bc35ffe968a127c606bccd70/2f1b1/illustration-2.jpg");
+    }
 }
