@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-} 
+}
 
 body {
     margin: 0;
@@ -31,6 +31,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
 ul {
     justify-content: space-around;
     list-style-type: none;
@@ -68,12 +69,13 @@ li a:hover {
     font-family: "Kanit", sans-serif;
     background-color: #edf2f7;
     border-radius: 8px;
-    color:black;
+    color: black;
 }
 
 .findUs:hover {
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0);;
+    border: 1px solid rgba(0, 0, 0, 0);
+    ;
     border-radius: 8px;
     background-color: black;
     color: white;
@@ -90,8 +92,14 @@ li a:hover {
 }
 
 @media screen and (max-width: 480px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
     body {
         width: min-content;
+        margin: 0;
+        padding: 0;
     }
     .background {
         width: 100%;
@@ -114,7 +122,17 @@ li a:hover {
     .icon {
         display: none;
     }
- 
+    .blanco {
+        background-color: #f0e7d1;
+        border: none;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 17px;
+        position: absolute;
+        bottom: 10%;
+        left: 7%;
+        padding: 11px 25px;
+        border-radius: 6px;
+    }
 }
 
 .txtAndPic {
@@ -131,11 +149,13 @@ li a:hover {
     height: 650px;
     background-color: #f0e7d1;
 }
+
 .txt2 {
     width: 50%;
     height: 650px;
     background-image: url("https://drink818.com/static/a617ad5ba4e90efc6f1b660b21922871/2f1b1/illustration-1.jpg");
 }
+
 .paragtxt {
     line-height: 2.1;
     font-family: "Roboto Slab", serif;
@@ -143,10 +163,12 @@ li a:hover {
     align-items: center;
     margin-top: 20px;
 }
+
 .headingtxt {
     font-size: 32px;
     font-family: "Seymour One", sans-serif;
 }
+
 .processbtn {
     background-color: white;
     border: none;
@@ -156,10 +178,12 @@ li a:hover {
     margin-top: 40px;
     border-radius: 6px;
 }
+
 .processbtn:hover {
     background-color: black;
     color: white;
 }
+
 .txt3 {
     box-sizing: border-box;
     padding: 180px 35px 180px 35px;
@@ -167,23 +191,27 @@ li a:hover {
     height: 650px;
     background-color: #f0e7d1;
 }
+
 .txt4 {
     width: 50%;
     height: 650px;
     background-image: url("https://drink818.com/static/2d49b8e5bc35ffe968a127c606bccd70/2f1b1/illustration-2.jpg");
 }
+
 .txtAndPic2 {
     width: 100%;
     height: 650px;
     display: flex;
     justify-content: space-between;
 }
+
 .drinks {
     width: 100%;
     height: 800px;
     display: flex;
     justify-content: space-between;
 }
+
 .drink1 {
     width: 33.3%;
     position: relative;
@@ -191,6 +219,8 @@ li a:hover {
     background-repeat: no-repeat;
     border-right: 2px solid #e4d8c2;
     background-color: #fcfcfc;
+    background-position: center center;
+    background-size: 25em;
 }
 
 .drink2 {
@@ -200,25 +230,32 @@ li a:hover {
     background-repeat: no-repeat;
     background-image: url(https://drink818.com/static/52321549cc2efdaf28c8dab22d76ad6c/e6dbb/reposado%402x.png);
     background-color: #fcfcfc;
+    background-position: center center;
+    background-size: 25em;
 }
+
 .drink3 {
     width: 33.3%;
     background-repeat: no-repeat;
     position: relative;
     background-image: url(https://drink818.com/static/a94d2fe6734583774a0de349bd0027be/e6dbb/anejo%402x.png);
     background-color: #fcfcfc;
+    background-position: center center;
+    background-size: 25em;
 }
+
 .blanco {
     background-color: #f0e7d1;
     border: none;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 17px;
     position: absolute;
-    bottom: 96px;
-    left: 34%;
-    padding: 14px 25px;
+    bottom: 10%;
+    left: 32%;
+    padding: 11px 25px;
     border-radius: 6px;
 }
+
 .blanco:hover {
     background-color: black;
     color: white;
@@ -226,47 +263,53 @@ li a:hover {
     transition: 0.3s;
 }
 
-.blanco > * {
+.blanco>* {
     margin: 5px;
 }
+
 .repos {
     background-color: #f0e7d1;
     border: none;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 17px;
     position: absolute;
-    bottom: 96px;
-    left: 30%;
+    bottom: 10%;
+    left: 28%;
     padding: 15px 25px;
     border-radius: 6px;
 }
+
 .repos:hover {
     background-color: black;
     color: white;
     cursor: pointer;
     transition: 0.3s;
 }
+
 .anejo {
     background-color: #f0e7d1;
     border: none;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 17px;
     position: absolute;
-    bottom: 96px;
-    left: 30%;
-    padding: 15px 25px;
+    bottom: 10%;
+    left: 28%;
+    padding: 14px 25px;
     border-radius: 6px;
 }
+
 .anejo:hover {
     background-color: black;
     color: white;
     cursor: pointer;
     transition: 0.3s;
 }
+
 .last {
     height: 200px;
     width: 100%;
 }
+
 .last {
     width: 100%;
     height: 100vh;
@@ -277,9 +320,11 @@ li a:hover {
     justify-content: space-between;
     padding: 96px 0 0 80px;
 }
+
 .harmonydiv {
     width: 50%;
 }
+
 .righttxt {
     width: 50%;
     color: white;
@@ -288,12 +333,14 @@ li a:hover {
     font-family: "Roboto Mono", monospace;
     margin-right: 20px;
 }
+
 .harmonytxt {
     font-family: "Seymour One", sans-serif;
     color: white;
     font-size: 30px;
     max-width: 461px;
 }
+
 .learnmore {
     border: none;
     font-size: 14px;
@@ -301,15 +348,18 @@ li a:hover {
     margin-top: 40px;
     border-radius: 6px;
 }
+
 .learnmore:hover {
     background-color: black;
     color: white;
 }
+
 .loginform {
     width: 100%;
     height: 100%;
     background-color: #405a46;
 }
+
 .login {
     box-sizing: border-box;
     padding: 120px 20px;
@@ -326,9 +376,11 @@ li a:hover {
     color: white;
     font-family: "Seymour One", sans-serif;
 }
+
 .signuptxt {
     color: white;
 }
+
 .inputs {
     display: flex;
     flex-direction: column;
@@ -336,15 +388,51 @@ li a:hover {
     max-width: 420px;
     margin-top: 10px;
 }
+
 .inputlog {
     height: 42px;
     border-radius: 4px;
     border: none;
     background-color: #edf2f7;
 }
+
+.inputlogmail {
+    height: 42px;
+    border-radius: 4px;
+    border: none;
+    background-color: #edf2f7;
+}
+
+.inputlognum {
+    height: 42px;
+    border-radius: 4px;
+    border: none;
+    background-color: #edf2f7;
+}
+
+.inputlogzip {
+    height: 42px;
+    border-radius: 4px;
+    border: none;
+    background-color: #edf2f7;
+}
+
+.inputlognum:hover {
+    border: none;
+}
+
+.inputlogmail:hover {
+    border: none;
+}
+
+.inputlogzip:hover {
+    border: none;
+}
+
 .inputlog:hover {
     border: none;
 }
+
 .signupbtn {
     width: 100%;
     height: 42px;
@@ -355,11 +443,13 @@ li a:hover {
     border: none;
     color: #809084;
 }
+
 .signupbtn:hover {
     background-color: black;
     color: white;
     transition: 0.3s;
 }
+
 .comeagain {
     width: 100%;
     height: 100vh;
@@ -377,6 +467,7 @@ li a:hover {
     width: 220px;
     height: 220px;
 }
+
 footer {
     width: 100%;
     height: 380px;
@@ -384,18 +475,22 @@ footer {
     padding: 48px 80px;
     font-family: "Kanit", sans-serif;
 }
+
 .copyright {
     margin-top: 220px;
     color: white;
 }
+
 .footer1 {
     margin-left: 30px;
 }
+
 .footer2 {
     margin-left: 120px;
     display: flex;
     flex-direction: column;
 }
+
 .footer3 {
     margin-left: 135px;
     display: flex;
@@ -418,37 +513,52 @@ footer {
     display: flex;
 }
 
-#last-text > p {
+#last-text>p {
     color: white;
     font-size: 11px;
     margin: 30px;
 }
+
 .flwus {
     display: flex;
     justify-content: flex-end;
     margin-top: -270px;
     color: white;
 }
+
 .logos {
     display: flex;
     margin-left: 15px;
     margin-top: 6px;
 }
 
-.logos > a {
+.logos>a {
     margin-right: 10px;
 }
-@media only  screen and (max-width: 600px){
+
+.valid {
+    display: none;
+}
+
+.notvalid {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
     .txtAndPic {
         width: 100%;
         height: 650px;
-        display: block ;
-    
-    } 
+        display: block;
+    }
     .txt1 {
         box-sizing: border-box;
         width: 100%;
-         height: 100vh;
+        height: 100vh;
         background-color: #f0e7d1;
     }
     .headingtxt {
@@ -457,12 +567,11 @@ footer {
     }
     .txtAndPic2 {
         width: 100%;
-        height: 1600px;
+        height: 1300px;
         display: block;
-      
     }
     .txt2 {
-        width:100%;
+        width: 100%;
         height: 650px;
         background-image: url("https://drink818.com/static/a617ad5ba4e90efc6f1b660b21922871/2f1b1/illustration-1.jpg");
     }
@@ -477,5 +586,38 @@ footer {
         width: 100%;
         height: 650px;
         background-image: url("https://drink818.com/static/2d49b8e5bc35ffe968a127c606bccd70/2f1b1/illustration-2.jpg");
+    }
+    .blanco {
+        background-color: #f0e7d1;
+        border: none;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 15px;
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        padding: 13px 30px;
+        border-radius: 6px;
+    }
+    .repos {
+        background-color: #f0e7d1;
+        border: none;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 13px;
+        position: absolute;
+        bottom: 10%;
+        left: 2%;
+        padding: 15px 25px;
+        border-radius: 6px;
+    }
+    .anejo {
+        background-color: #f0e7d1;
+        border: none;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 13px;
+        position: absolute;
+        bottom: 10%;
+        left: 2%;
+        padding: 15px 25px;
+        border-radius: 6px;
     }
 }
